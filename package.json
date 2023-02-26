@@ -18,5 +18,10 @@
   "homepage": "https://github.com/2Ruk/cyphers-bot-discord#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.0.3"
+  },
+  "type": "module"
 }
