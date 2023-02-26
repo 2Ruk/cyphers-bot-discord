@@ -1,10 +1,12 @@
 export class UserInfoDto {
-    constructor(userName, userGrade, userClanName) {
+    constructor(userId,userName, userGrade, userClanName) {
+        this.userId = userId;
         this.userName = userName;
         this.userGrade = userGrade;
         this.userClanName = userClanName;
     }
 
+    userId='';
     userName = '';
     userGrade = 0;
     userClanName = '';
@@ -13,6 +15,10 @@ export class UserInfoDto {
     userWinCount = 0;
     userLoseCount = 0;
     userWinRate = 0;
+
+    set setUserId(userId){
+        this.userId = userId;
+    }
 
     setAllUserInfo(userName, userGrade, clanName, userWinCount, userLoseCount, userWinRate) {
         this.userName = userName;
