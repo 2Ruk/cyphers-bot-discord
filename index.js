@@ -14,16 +14,20 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    const {command,param,router} = routeHelper(msg);
-
-    if (router==='cyphers') {
-        cyphersController(command, param,msg);
+    const userInput = msg.content;
+    if(userInput.includes('/전적')){
+        msg.reply('전적')
     }
 
-    if(router =='default'){
-        msg.reply('안녕하세요! 현재 개발중인 봇입니다. \n 개발자: @치킨#7777');
+    if(userInput.includes('/정보')){
+        msg.reply('정보')
     }
+
 });
 
+// const {command,param,router} = routeHelper(msg);
+// if (router==='cyphers') {
+//     cyphersController(command, param,msg);
+// }
 
 client.login(discord_token);
