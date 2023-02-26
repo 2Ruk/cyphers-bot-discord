@@ -3,4 +3,4 @@ cyphers discord-bot
 
 update test
 
-made by 치킨
+made by 치킨 ^^
