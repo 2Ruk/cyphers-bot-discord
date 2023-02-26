@@ -1,0 +1,22 @@
+{
+  "name": "cyphers-bot-discord",
+  "version": "1.0.0",
+  "description": "cyphers discord-bot",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2Ruk/cyphers-bot-discord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2Ruk/cyphers-bot-discord/issues"
+  },
+  "homepage": "https://github.com/2Ruk/cyphers-bot-discord#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
