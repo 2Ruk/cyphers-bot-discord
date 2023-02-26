@@ -24,7 +24,7 @@ client.on('message', async msg => {
     }
 
     if(command === '/정보'){
-        const userId = await getUserId("반ㅋ반ㅋ치ㅋ킨ㅋ");
+        const userId = await getUserId(param);
         if(!userId) return;
 
         const userDetailInfo = await getUserDetailUserInfo(userId);
